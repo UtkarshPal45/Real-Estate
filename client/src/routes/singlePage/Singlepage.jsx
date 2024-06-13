@@ -26,6 +26,15 @@ export default function SinglePage() {
       setSaved((prev) => !prev);
     }
   };
+  console.log(post)
+
+  const handleSendMessage= async ()=>{
+    await apiRequest.post("/chats",{receiverId:post.userId,textMsg: "new chat started"})
+    navigate("/profile")
+  }
+
+
+
 
   return (
     
@@ -142,7 +151,7 @@ export default function SinglePage() {
               <Map items={[post]}/>
             </div>
             <div className="buttons">
-              <button>
+              <button onClick={handleSendMessage}>
                  <img src='/chat.png' alt=''/>
                  Send a message 
               </button>

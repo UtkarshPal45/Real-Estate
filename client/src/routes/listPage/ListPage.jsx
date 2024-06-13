@@ -8,6 +8,7 @@ import { Await,useLoaderData } from 'react-router-dom'
 export default function ListPage() {
 
   const data=useLoaderData()
+  console.log(data)
 
   return (
     <div className='listPage'>
@@ -33,7 +34,7 @@ export default function ListPage() {
             <Await
               resolve={data.postResponse}
               errorElement={
-                <p>Error loading posts!</p>
+                <p>Error loading map!</p>
               }
             >
             {(postResponse)=> 

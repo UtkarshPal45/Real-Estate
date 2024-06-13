@@ -6,8 +6,6 @@ import { AuthContext } from '../../context/AuthContext'
 export default function HomePage() {
 
     const {currentUser}=useContext(AuthContext)
-    console.log(currentUser)
-
 
   return (
     <div className='homepage'>
@@ -15,8 +13,8 @@ export default function HomePage() {
             <div className="wrapper">
                 <h1 className='title'>Find Real Estate & Get Your Dream Place</h1>
                 <p>
-                    lorem ipsum React.js real estate booking system design course. React real estate responsive UI design project with HTML, CSS, and React Map.
-                </p>
+                Discover the perfect home tailored to your needs with our comprehensive real estate platform. 
+                Whether you're buying, selling, or renting, we make your dream home a reality.                </p>
                 <SearchBar/>
                 <div className="boxes">
                     <div className="box">

@@ -36,14 +36,14 @@ export default function Navbar() {
               <div className='user'>
                 <img src={currentUser.avatar || "/noavatar.jpg"} alt="" />
                 <span>{currentUser.username}</span>
-                <Link to="/profile" className='profile'>
+                <Link to="/profile" className="profile">
                   {number>0 && <div className="notification">{number}</div>}
                   <span>Profile</span>
                 </Link>
               </div> : 
               <>
               <a href="/login">SignIn</a>
-              <a href="/register" className='register'>Sign Up</a>
+              <a href="/register" >Sign Up</a>
               </>
           }
             <div className="menuIcon">

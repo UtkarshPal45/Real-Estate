@@ -1,13 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { MapContainer,TileLayer } from 'react-leaflet'
 import './map.scss'
 import 'leaflet/dist/leaflet.css'
 import Pin from '../pin/Pin';
 
 export default function Map({items}) {
-    const position = [51.505, -0.09] //update this to center of the your country
-
-    // console.log(items);
+  const position = [26.83928, 80.92313] 
   return (
     <MapContainer 
         center={

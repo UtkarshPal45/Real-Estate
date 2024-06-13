@@ -28,7 +28,6 @@ const getUser = (userId) => {
 io.on("connection",(socket)=>{
     socket.on("newUser",(userId)=>{ 
         addUser(userId,socket.id)
-        console.log(onlineUser)
     })
 
     socket.on("sendMessage",({receiverId,data})=>{
